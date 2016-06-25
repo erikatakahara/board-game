@@ -1,0 +1,6 @@
+appengine-generated/*
+pkg/*
+src/*
+conf.json
+webapp/assets/css/*
+node_modules
