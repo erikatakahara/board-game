@@ -1,0 +1,19 @@
+# OS
+*.swp
+.DS_Store
+
+# Editor Configs
+.idea
+.vscode
+*.sublime*
+
+# Generated Files
+.cache
+coverage
+.nyc-output
+*.marko.js
+.marko-cli
+.marko-devtools
+
+# NPM
+node_modules
