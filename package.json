@@ -1,8 +1,9 @@
 {
-  "name": "board-game-app",
+  "name": "board-game",
   "description": "Demo of how to build an app using marko-starter",
   "version": "1.0.0",
   "dependencies": {
+    "lasso-marko": "^2.4.6",
     "marko": "^4.13.10",
     "marko-starter": "^2.0.4"
   },

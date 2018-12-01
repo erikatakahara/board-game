@@ -1,0 +1,29 @@
+class {
+    onCreate() {
+        this.state = {
+			current_page: 'home',
+        };
+    }
+
+	home() {
+		this.state.current_page = 'home';
+	}
+
+    list() {
+        this.state.current_page = 'board-game-list';
+    }
+}
+
+<header>
+	My board game webapp
+	<nav.menu>
+		<a onClick('home') href='#home'>home</a>
+		<a onClick('list') href='#board-games'>My board games</a>
+	</nav>
+</header>
+<div.content>
+	<board-list if(state.current_page == 'board-game-list') />
+	<section else>
+	Home!
+	</section>
+</div>
