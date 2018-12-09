@@ -2,11 +2,10 @@
   "name": "board-game",
   "description": "Demo of how to build an app using marko-starter",
   "version": "1.0.0",
-  "static-repo": "git@github.com:erikatakahara/board-game.git#gh-pages",
-  "baseurl": "/board-game",
   "dependencies": {
     "marko": "^4.13.10",
-    "marko-starter": "^2.0.4"
+    "marko-starter": "^2.0.4",
+    "prompt": "^1.0.0"
   },
   "devDependencies": {
     "eslint": "^5.9.0",
@@ -26,7 +25,10 @@
     "lint": "eslint src",
     "serve": "NODE_ENV=production marko-starter serve-static",
     "start": "marko-starter server",
+    "publish": "LASSO_TIMEOUT=60000 NODE_ENV=production node ./publish.js",
     "test": "npm run lint"
   },
-  "private": true
+  "private": true,
+  "static-repo": "git@github.com:erikatakahara/board-game.git#gh-pages",
+  "baseurl": "/board-game"
 }

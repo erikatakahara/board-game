@@ -14,6 +14,7 @@ coverage
 *.marko.js
 .marko-cli
 .marko-devtools
+/dist
 
 # NPM
 node_modules
