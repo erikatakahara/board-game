@@ -8,20 +8,16 @@ static {
 	<head>
 		<meta charset='utf-8'/>
     	<meta name='viewport' content='width=device-width'/>
+		<link href='https://fonts.googleapis.com/css?family=Quicksand:400,500' rel='stylesheet'>
     	<title><${input.title}/></title>
 	</head>
 	<body>
 		<header>
-			<img.logo src='./logo.png' alt='marko logo'/>
-			<h1><${input.title}/></h1>
-		<nav.menu>
-			<a href='${path}/'>home</a>
-			<a href='${path}/hello/routing'>routes</a>
-			<a href='${path}/layouts'>layouts</a>
-		</nav>
+			<h1><a href='${path}/'>MyBG</a></h1>
 		</header>
 		<section.content>
 			<${input.content}/>
 		</section>
+		<a.new href='${path}/bg/new'>+</a>
   </body>
 </html>
