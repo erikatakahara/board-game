@@ -3,16 +3,16 @@
   "description": "Demo of how to build an app using marko-starter",
   "version": "1.0.0",
   "dependencies": {
-    "marko": "^4.13.10",
+    "marko": "^4.15.2",
     "marko-starter": "^2.0.4",
     "prompt": "^1.0.0"
   },
   "devDependencies": {
-    "eslint": "^5.9.0",
-    "eslint-config-prettier": "^3.3.0",
-    "eslint-plugin-prettier": "^3.0.0",
-    "marko-prettyprint": "^1.5.2",
-    "prettier": "^1.15.2"
+    "eslint": "^5.14.1",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "marko-prettyprint": "^2.0.0",
+    "prettier": "^1.16.4"
   },
   "license": "MIT",
   "repository": {
