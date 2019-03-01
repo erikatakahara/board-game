@@ -1,28 +1,36 @@
 static {
-    const boardGameList = [{
-        name: 'Ticket to ride',
-        cover: 'https://via.placeholder.com/200',
-        tags: ['simple', 'party']
-    },
-    {
-        name: 'Imagine',
-        cover: 'https://via.placeholder.com/200',
-        tags: ['simple', 'party']
-    },
-    {
-        name: 'Elderich horror',
-        cover: 'https://via.placeholder.com/200',
-        tags: ['simple', 'party']
-    }];
+	const boardGameList = [{
+		name: 'Ticket to ride',
+		cover: 'https://via.placeholder.com/200',
+		tags: ['simple', 'party']
+	{
+		name: 'Imagine',
+		cover: 'https://via.placeholder.com/200',
+		tags: ['simple', 'party']
+	},
+	{
+		name: 'Elderich horror',
+		cover: 'https://via.placeholder.com/200',
+		tags: ['simple', 'party']
+	}];
 }
-
-<ol.board-game-list if(boardGameList && boardGameList.length > 0)>
-    <li for(board in boardGameList)>
-        <img.cover width='90' height='90' src='${board.cover}'>
-        <p.title>${board.name}</p>
-        <ul.tags if(board.tags)>
-            <li for(tag in board.tags)>${tag}</li>
-        </ul>
-    </li>
-</ol>
-<p else>Empty list</p>
+<if(boardGameList && boardGameList.length > 0)>
+	<ol.board-game-list>
+		<for|board| of=boardGameList>
+			<li>
+				<img.cover width='90' height='90' src=`${board.cover}`>
+				<p.title>${board.name}</p>
+				<if(board.tags)>
+					<ul.tags>
+						<for|tag| of=board.tags>
+							<li>${tag}</li>
+						</for>
+					</ul>
+				</if>
+			</li>
+		</for>
+	</ol>
+</if>
+<else>
+	<p>Empty list</p>
+</else>

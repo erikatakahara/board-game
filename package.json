@@ -7,13 +7,6 @@
     "marko-starter": "^2.0.4",
     "prompt": "^1.0.0"
   },
-  "devDependencies": {
-    "eslint": "^5.14.1",
-    "eslint-config-prettier": "^4.1.0",
-    "eslint-plugin-prettier": "^3.0.1",
-    "marko-prettyprint": "^2.0.0",
-    "prettier": "^1.16.4"
-  },
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -21,8 +14,6 @@
   },
   "scripts": {
     "build": "NODE_ENV=production marko-starter build",
-    "format": "prettier src/**/*.{js,css,less} --write && marko-prettyprint src",
-    "lint": "eslint src",
     "serve": "NODE_ENV=production marko-starter serve-static",
     "start": "marko-starter server",
     "publish": "LASSO_TIMEOUT=60000 NODE_ENV=production node ./publish.js",
